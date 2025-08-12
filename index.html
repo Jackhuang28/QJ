@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仟吉金融科技股份有限公司 - 您的安心匯兌夥伴</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        .bg-hero {
+            background-image: url('https://placehold.co/1920x1080/F9A825/ffffff?text=Remittance+Solution');
+            background-size: cover;
+            background-position: center;
+        }
+        .orange-primary {
+            color: #F9A825;
+        }
+        .bg-orange-primary {
+            background-color: #F9A825;
+        }
+        .hover\:bg-orange-600:hover {
+            background-color: #F59E0B;
+        }
+        .focus\:ring-orange-500:focus {
+            --tw-ring-color: #F9A825;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo - Now using the user's provided logo image -->
+            <a href="#" class="flex items-center space-x-2">
+                <img src="uploaded:QJ Exchange app icon.jpg-adf5fa91-8008-4d8d-b64f-51c44ca50370" alt="仟吉金融科技股份有限公司 Logo" class="h-10">
+                <span class="text-2xl font-bold orange-primary">仟吉金融科技</span>
+            </a>
+
+            <!-- Language Switcher -->
+            <div class="relative inline-block text-left">
+                <button id="lang-menu-btn" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
+                    <span id="current-lang-text">繁體中文</span>
+                    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+
+                <div id="lang-menu" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden" role="menu" aria-orientation="vertical" aria-labelledby="lang-menu-btn">
+                    <div class="py-1" role="none">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 lang-option" data-lang="zh-Hant">繁體中文</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 lang-option" data-lang="en">English</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 lang-option" data-lang="id">Bahasa Indonesia</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 lang-option" data-lang="vi">Tiếng Việt</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="bg-hero min-h-[60vh] flex items-center justify-center p-4">
+            <div class="text-center text-white bg-black bg-opacity-50 p-8 rounded-xl shadow-lg max-w-2xl">
+                <!-- Updated hero title to indicate coming soon -->
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4" data-i18n="heroTitle">
+                    仟吉金融科技，您的安心匯兌夥伴 (即將推出)
+                </h1>
+                <!-- Updated subtitle to indicate licensing status -->
+                <p class="text-lg md:text-xl font-light mb-8" data-i18n="heroSubtitle">
+                    我們正在積極申請相關執照，敬請期待我們為您提供的安全、快速匯兌服務。
+                </p>
+                <!-- Updated button text and functionality -->
+                <a href="#" class="inline-block bg-orange-primary text-white font-bold py-3 px-8 rounded-full text-lg shadow-xl hover:bg-orange-600 transition-colors duration-300 cursor-not-allowed" data-i18n="heroButton" onclick="event.preventDefault();">
+                    敬請期待
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-16 bg-white" id="services">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="servicesTitle">我們的服務優勢</h2>
+                <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto" data-i18n="servicesSubtitle">
+                    專為您打造，我們致力於提供最貼心與高效的匯款體驗。
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-gray-100 p-8 rounded-xl shadow-md transition-transform transform hover:scale-105">
+                        <div class="mb-4 orange-primary">
+                            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2" data-i18n="service1Title">匯款快速到帳</h3>
+                        <p class="text-gray-600" data-i18n="service1Desc">
+                            透過數位化流程，您的款項能在最短時間內安全送達。
+                        </p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="bg-gray-100 p-8 rounded-xl shadow-md transition-transform transform hover:scale-105">
+                        <div class="mb-4 orange-primary">
+                            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm0-12h12V8H6z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2" data-i18n="service2Title">手續費超低廉</h3>
+                        <p class="text-gray-600" data-i18n="service2Desc">
+                            我們提供具競爭力的匯率和透明的費用，讓您省下更多。
+                        </p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-gray-100 p-8 rounded-xl shadow-md transition-transform transform hover:scale-105">
+                        <div class="mb-4 orange-primary">
+                            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m-12 1h12a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2" data-i18n="service3Title">合法安全保障</h3>
+                        <p class="text-gray-600" data-i18n="service3Desc">
+                            所有交易皆符合法規，您的資金安全是我們的首要任務。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="py-16 bg-gray-50" id="how-it-works">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="howTitle">匯款流程超簡單</h2>
+                <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto" data-i18n="howSubtitle">
+                    簡單三步驟，輕鬆完成匯款。
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 flex items-center justify-center bg-orange-primary text-white rounded-full font-bold text-2xl shadow-lg mb-4">1</div>
+                        <h3 class="text-xl font-semibold mb-2" data-i18n="step1Title">註冊與登入</h3>
+                        <p class="text-gray-600" data-i18n="step1Desc">
+                            在我們的網站或App上快速註冊，即可隨時隨地開始匯款。
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 flex items-center justify-center bg-orange-primary text-white rounded-full font-bold text-2xl shadow-lg mb-4">2</div>
+                        <h3 class="text-xl font-semibold mb-2" data-i18n="step2Title">輸入匯款資料，產生繳款條碼</h3>
+                        <p class="text-gray-600" data-i18n="step2Desc">
+                            填寫匯款金額與收款人資訊，系統將為您生成繳款條碼。
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 flex items-center justify-center bg-orange-primary text-white rounded-full font-bold text-2xl shadow-lg mb-4">3</div>
+                        <h3 class="text-xl font-semibold mb-2" data-i18n="step3Title">到便利超商繳款</h3>
+                        <p class="text-gray-600" data-i18n="step3Desc">
+                            持條碼至便利商店完成繳款，我們將立即處理匯款。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section - Updated for coming soon message -->
+        <section class="bg-orange-primary text-white py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="ctaTitle">匯兌服務即將推出，敬請期待！</h2>
+                <p class="text-lg max-w-3xl mx-auto mb-8" data-i18n="ctaSubtitle">
+                    我們承諾在服務正式上線後，提供最優質的匯兌體驗，讓您與家人的距離不再遙遠。
+                </p>
+                <a href="#" class="inline-block bg-white text-orange-500 font-bold py-3 px-8 rounded-full text-lg shadow-xl hover:bg-gray-100 transition-colors duration-300 cursor-not-allowed" data-i18n="ctaButton" onclick="event.preventDefault();">
+                    了解更多
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm mb-4" data-i18n="companyFullname">仟吉金融科技股份有限公司</p>
+            <p class="text-sm" data-i18n="companyAddress">公司地址：104台北市民權西路27號12樓之1</p>
+            <p class="text-sm" data-i18n="companyPhone">聯絡電話：(02)2598-1668</p>
+            <p class="text-sm">&copy; <span id="current-year"></span> 仟吉金融科技股份有限公司. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Language content for internationalization
+        const translations = {
+            'zh-Hant': {
+                heroTitle: '仟吉金融科技，您的安心匯兌夥伴 (即將推出)',
+                heroSubtitle: '我們正在積極申請相關執照，敬請期待我們為您提供的安全、快速匯兌服務。',
+                heroButton: '敬請期待',
+                servicesTitle: '我們的服務優勢',
+                servicesSubtitle: '專為您打造，我們致力於提供最貼心與高效的匯款體驗。',
+                service1Title: '匯款快速到帳',
+                service1Desc: '透過數位化流程，您的款項能在最短時間內安全送達。',
+                service2Title: '手續費超低廉',
+                service2Desc: '我們提供具競爭力的匯率和透明的費用，讓您省下更多。',
+                service3Title: '合法安全保障',
+                service3Desc: '所有交易皆符合法規，您的資金安全是我們的首要任務。',
+                howTitle: '匯款流程超簡單',
+                howSubtitle: '簡單三步驟，輕鬆完成匯款。',
+                step1Title: '註冊與登入',
+                step1Desc: '在我們的網站或App上快速註冊，即可隨時隨地開始匯款。',
+                step2Title: '輸入匯款資料，產生繳款條碼',
+                step2Desc: '填寫匯款金額與收款人資訊，系統將為您生成繳款條碼。',
+                step3Title: '到便利超商繳款',
+                step3Desc: '持條碼至便利商店完成繳款，我們將立即處理匯款。',
+                ctaTitle: '匯兌服務即將推出，敬請期待！',
+                ctaSubtitle: '我們承諾在服務正式上線後，提供最優質的匯兌體驗，讓您與家人的距離不再遙遠。',
+                ctaButton: '了解更多',
+                companyFullname: '仟吉金融科技股份有限公司',
+                companyAddress: '公司地址：104台北市民權西路27號12樓之1',
+                companyPhone: '聯絡電話：(02)2598-1668',
+            },
+            'en': {
+                heroTitle: 'Qian Ji Financial Technology, Your Trusted Remittance Partner (Coming Soon)',
+                heroSubtitle: 'We are actively applying for the relevant license, please stay tuned for our secure and fast remittance service.',
+                heroButton: 'Stay Tuned',
+                servicesTitle: 'Our Service Advantages',
+                servicesSubtitle: 'Tailored for you, we are committed to providing the most thoughtful and efficient remittance experience.',
+                service1Title: 'Fast Transfers',
+                service1Desc: 'With our digital process, your funds will arrive safely in the shortest time possible.',
+                service2Title: 'Ultra Low Fees',
+                service2Desc: 'We offer competitive exchange rates and transparent fees, so you can save more.',
+                service3Title: 'Legal and Secure',
+                service3Desc: 'All transactions comply with regulations. The safety of your funds is our top priority.',
+                howTitle: 'Simple Remittance Process',
+                howSubtitle: 'Three simple steps to complete your remittance.',
+                step1Title: 'Register and Login',
+                step1Desc: 'Register quickly on our website or app to start sending money anytime, anywhere.',
+                step2Title: 'Enter Details & Generate Barcode',
+                step2Desc: 'Fill in the amount and recipient information. The system will generate a payment barcode for you.',
+                step3Title: 'Pay at Convenience Store',
+                step3Desc: 'Take the barcode to a convenience store to make your payment. We will process the remittance immediately after payment.',
+                ctaTitle: 'Remittance Service Coming Soon, Stay Tuned!',
+                ctaSubtitle: 'We are committed to providing the best remittance experience once the service is officially launched, so you and your family are never far apart.',
+                ctaButton: 'Learn More',
+                companyFullname: 'Qian Ji Financial Technology Co., Ltd.',
+                companyAddress: 'Company Address: 12F-1, No. 27, Minquan W. Rd., Taipei City 104, Taiwan',
+                companyPhone: 'Phone: (02)2598-1668',
+            },
+            'id': {
+                heroTitle: 'Qian Ji Teknologi Keuangan, Mitra Remitansi Tepercaya Anda (Segera Hadir)',
+                heroSubtitle: 'Kami sedang aktif mengajukan lisensi yang relevan, mohon nantikan layanan remitansi kami yang aman dan cepat.',
+                heroButton: 'Nantikan',
+                servicesTitle: 'Keunggulan Layanan Kami',
+                servicesSubtitle: 'Dibuat khusus untuk Anda, kami berkomitmen untuk memberikan pengalaman remitansi yang paling bijaksana dan efisien.',
+                service1Title: 'Transfer Cepat',
+                service1Desc: 'Dengan proses digital kami, dana Anda akan tiba dengan aman dalam waktu sesingkat mungkin.',
+                service2Title: 'Biaya Sangat Rendah',
+                service2Desc: 'Kami menawarkan nilai tukar yang kompetitif dan biaya yang transparan, sehingga Anda dapat menghemat lebih banyak.',
+                service3Title: 'Sah dan Aman',
+                service3Desc: 'Semua transaksi mematuhi peraturan. Keamanan dana Anda adalah prioritas utama kami.',
+                howTitle: 'Proses Remitansi Sederhana',
+                howSubtitle: 'Tiga langkah sederhana untuk menyelesaikan remitansi Anda.',
+                step1Title: 'Daftar dan Masuk',
+                step1Desc: 'Daftar dengan cepat di situs web atau aplikasi kami untuk mulai mengirim uang kapan saja, di mana saja.',
+                step2Title: 'Masukkan Detail & Buat Barcode',
+                step2Desc: 'Isi jumlah dan informasi penerima. Sistem akan membuat barcode pembayaran untuk Anda.',
+                step3Title: 'Bayar di Toko Serba Ada',
+                step3Desc: 'Bawa barcode ke toko serba ada untuk melakukan pembayaran. Kami akan segera memproses remitansi setelah pembayaran.',
+                ctaTitle: 'Layanan Remitansi Segera Hadir, Nantikan!',
+                ctaSubtitle: 'Kami berkomitmen untuk memberikan pengalaman remitansi terbaik setelah layanan diluncurkan secara resmi, sehingga Anda dan keluarga tidak pernah berjauhan.',
+                ctaButton: 'Pelajari Lebih Lanjut',
+                companyFullname: 'Qian Ji Financial Technology Co., Ltd.',
+                companyAddress: 'Alamat Perusahaan: 12F-1, No. 27, Minquan W. Rd., Taipei City 104, Taiwan',
+                companyPhone: 'Telepon: (02)2598-1668',
+            },
+            'vi': {
+                heroTitle: 'Công nghệ Tài chính Qian Ji, Đối tác Chuyển tiền Đáng tin cậy của bạn (Sắp ra mắt)',
+                heroSubtitle: 'Chúng tôi đang tích cực nộp đơn xin cấp giấy phép liên quan, xin vui lòng chờ đợi dịch vụ chuyển tiền an toàn và nhanh chóng của chúng tôi.',
+                heroButton: 'Hãy chờ đợi',
+                servicesTitle: 'Ưu điểm Dịch vụ của chúng tôi',
+                servicesSubtitle: 'Được thiết kế riêng cho bạn, chúng tôi cam kết mang đến trải nghiệm chuyển tiền chu đáo và hiệu quả nhất.',
+                service1Title: 'Chuyển khoản nhanh chóng',
+                service1Desc: 'Với quy trình số hóa của chúng tôi, tiền của bạn sẽ đến nơi an toàn trong thời gian ngắn nhất.',
+                service2Title: 'Phí cực thấp',
+                service2Desc: 'Chúng tôi cung cấp tỷ giá hối đoái cạnh tranh và phí minh bạch, giúp bạn tiết kiệm nhiều hơn.',
+                service3Title: 'Hợp pháp và an toàn',
+                service3Desc: 'Tất cả các giao dịch đều tuân thủ quy định. An toàn tài chính của bạn là ưu tiên hàng đầu của chúng tôi.',
+                howTitle: 'Quy trình Chuyển tiền đơn giản',
+                howSubtitle: 'Ba bước đơn giản để hoàn tất chuyển tiền của bạn.',
+                step1Title: 'Đăng ký và Đăng nhập',
+                step1Desc: 'Đăng ký nhanh chóng trên trang web hoặc ứng dụng của chúng tôi để bắt đầu gửi tiền mọi lúc, mọi nơi.',
+                step2Title: 'Nhập chi tiết và tạo mã vạch',
+                step2Desc: 'Điền số tiền và thông tin người nhận. Hệ thống sẽ tạo mã vạch thanh toán cho bạn.',
+                step3Title: 'Thanh toán tại cửa hàng tiện lợi',
+                step3Desc: 'Mang mã vạch đến cửa hàng tiện lợi để thanh toán. Chúng tôi sẽ xử lý chuyển tiền ngay sau khi thanh toán.',
+                ctaTitle: 'Dịch vụ Chuyển tiền Sắp ra mắt, Hãy chờ đợi!',
+                ctaSubtitle: 'Chúng tôi cam kết cung cấp trải nghiệm chuyển tiền tốt nhất sau khi dịch vụ chính thức ra mắt, để bạn và gia đình không bao giờ xa cách.',
+                ctaButton: 'Tìm hiểu thêm',
+                companyFullname: 'Công ty Công nghệ Tài chính Qian Ji',
+                companyAddress: 'Địa chỉ Công ty: 12F-1, No. 27, Minquan W. Rd., Taipei City 104, Taiwan',
+                companyPhone: 'Số điện thoại: (02)2598-1668',
+            },
+        };
+
+        // Function to update the page content based on the selected language
+        function updateContent(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            // Update the company full name in the footer specifically for Chinese
+            const companyFullnameElement = document.querySelector('[data-i18n="companyFullname"]');
+            if (lang === 'zh-Hant') {
+                 companyFullnameElement.textContent = "仟吉金融科技股份有限公司";
+            } else if (lang === 'en') {
+                companyFullnameElement.textContent = "Qian Ji Financial Technology Co., Ltd.";
+            } else if (lang === 'id') {
+                companyFullnameElement.textContent = "Qian Ji Teknologi Keuangan Co., Ltd.";
+            } else if (lang === 'vi') {
+                companyFullnameElement.textContent = "Công ty Công nghệ Tài chính Qian Ji";
+            }
+            // Update the title of the document
+            document.title = (lang === 'zh-Hant' ? "仟吉金融科技股份有限公司 - 您的安心匯兌夥伴" : translations[lang].heroTitle);
+            // Update the current language display text
+            const currentLangText = document.getElementById('current-lang-text');
+            if (lang === 'zh-Hant') currentLangText.textContent = '繁體中文';
+            if (lang === 'en') currentLangText.textContent = 'English';
+            if (lang === 'id') currentLangText.textContent = 'Bahasa Indonesia';
+            if (lang === 'vi') currentLangText.textContent = 'Tiếng Việt';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set the current year in the footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Set default language and update content
+            let currentLang = 'zh-Hant';
+            updateContent(currentLang);
+
+            // Handle language menu toggle
+            const langMenuBtn = document.getElementById('lang-menu-btn');
+            const langMenu = document.getElementById('lang-menu');
+            langMenuBtn.addEventListener('click', () => {
+                langMenu.classList.toggle('hidden');
+            });
+            // Hide the menu if the user clicks outside of it
+            window.addEventListener('click', (event) => {
+                if (!langMenuBtn.contains(event.target) && !langMenu.contains(event.target)) {
+                    langMenu.classList.add('hidden');
+                }
+            });
+
+            // Handle language selection
+            document.querySelectorAll('.lang-option').forEach(option => {
+                option.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    currentLang = event.target.getAttribute('data-lang');
+                    document.documentElement.lang = currentLang; // Update html lang attribute
+                    updateContent(currentLang);
+                    langMenu.classList.add('hidden'); // Hide menu after selection
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
